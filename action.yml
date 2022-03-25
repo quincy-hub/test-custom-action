@@ -1,0 +1,12 @@
+name: 'Thank you action'
+description: 'say thank you on pull request'
+author: Jason Haslow
+
+inpus:
+  GITHIB_TOKEN:
+    description: 'GitHub token'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

@@ -1,0 +1,23 @@
+{
+  "name": "test-custom-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quincy-hub/test-custom-action.git"
+  },
+  "author": "Jason Haslow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quincy-hub/test-custom-action/issues"
+  },
+  "homepage": "https://github.com/quincy-hub/test-custom-action#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.33.3"
+  }
+}
