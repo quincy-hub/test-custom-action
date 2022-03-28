@@ -3,7 +3,7 @@ description: 'say thank you on pull request'
 author: Jason Haslow
 
 inputs:
-  GITHIB_TOKEN:
+  GITHUB_TOKEN:
     description: 'GitHub token'
     required: true
 
