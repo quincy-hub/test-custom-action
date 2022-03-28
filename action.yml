@@ -2,7 +2,7 @@ name: 'Thank you action'
 description: 'say thank you on pull request'
 author: Jason Haslow
 
-inpus:
+inputs:
   GITHIB_TOKEN:
     description: 'GitHub token'
     required: true
