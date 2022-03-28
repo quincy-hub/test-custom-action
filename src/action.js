@@ -7,12 +7,12 @@ async function run(){
 
     const octokit = github.getOctokit(GITHUB_TOKEN);
     console.log('octokit', JSON.stringify(octokit));
-    console.log('octokit.issues', JSON.stringify(octokit.issues));
+    console.log('octokit.rest.issues', JSON.stringify(octokit.rest.issues));
 
     const { context = {} } = github;
     const { pull_request } = context.payload;
 
-    await octokit.issues.createComment({
+    await octokit.rest.issues.createComment({
         ...github.context.repo,
         issue_number: pull_request.number,
         body: 'Thanks'
